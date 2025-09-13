@@ -1,0 +1,79 @@
+/*name of file - styles.css*/
+/*Set the background color of the entire page to black*/
+body {
+  background-color: black;
+}
+
+/* Define styles for the game area */
+#gameArea {
+  margin-left: 5%; /* Set left margin to 5% */
+  width: 2000px; /*Set width of the game area to 2000 pixels*/
+  height: 700px; /*Set height of the game area to 700 pixels*/
+  border: 2px solid white; /*Set a solid white border with a thickness of 2 pixels*/
+  position: relative; /* Set the positioning relative to its normal document flow (below the scores) */
+}
+
+/* Define styles for the ball */
+#ball {
+  width: 20px; /*Set width of the ball to 20 pixels*/
+  height: 20px; /*Set height of the ball to 20 pixels*/
+  background-color: red; /*Set background color of the ball to red*/
+  border-radius: 50%; /*Makes the ball round*/
+  position: absolute; /*Set to position absolute, so its not affected by the position of other elements on the page*/
+
+  /*Centers the point of the ball to the center of the ball*/
+  left: 50%; 
+  top: 50%; 
+
+  transform: translate(-50%, -50%); /*Center the ball horizontally and vertically within its the box*/
+}
+
+/*Define styles for the left and right paddles*/
+#paddleLeft, #paddleRight {
+  width: 10px; /*Set width of paddles to 10 pixels*/
+  height: 80px; /*Set height of paddles to 80 pixels*/
+  background-color: teal; /*Set background color of paddles to teal*/
+  position: absolute; /*Position the paddles absolutely within their container*/
+}
+
+/*Define styles for the left paddle*/
+#paddleLeft {
+  left: 0; /*Align the left paddle to the left edge of its container*/
+}
+
+/*Define styles for the right paddle*/
+#paddleRight {
+  right: 0; /*Align the right paddle to the right edge of its container*/
+}
+
+/*Set the color of text inside elements with id 'names' to white*/
+#names {
+  color: white;
+}
+
+/*Define styles for forms*/
+form {
+  font-size: 30px; /*Set font size of forms to 30 pixels*/
+  text-align: center; /*Align text inside forms to the center*/
+}
+
+/*Define styles for the start button*/
+#start {
+  font-size: 20px; /*Set font size of the start button to 20 pixels*/
+  position: absolute; /*Position the start button out of the normal document flow*/
+  margin-left: 10%; /*Set left margin of the start button to 10%*/
+}
+
+/* Define styles for the stop button */
+#stop {
+  font-size: 20px; /*Set font size of the stop button to 20 pixels*/
+  position: absolute; /*Position the stop button out of the normal document flow*/
+  margin-left: 80%; /*Set left margin of the stop button to 80%*/
+}
+
+/*Set the color of all paragraphs to white and font size to 30 pixels, and align text to center*/
+p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}

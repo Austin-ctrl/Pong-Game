@@ -1,0 +1,47 @@
+<!DOCTYPE html><!-- name of file: index.html -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    
+    <title>Pong Game</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to external CSS stylesheet -->
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+  </head>
+  <body>
+      <!-- Display left player's score -->
+      <p>Left Player Score: <span id="leftScore">0</span></p>
+      <!-- Display right player's score -->
+      <p>Right Player Score: <span id="rightScore">0</span></p>
+      <!-- Display number of hits -->
+      <p>Number of hits: <span id="hits">0</span></p>
+      
+      <!-- Form to input player names -->
+      <form id="names">
+          Player 1 name: <input type="text" name="p1" value="enter p1 name"><br> <!-- Input field for player 1's name -->
+          Player 2 name: <input type="text" name="p2" value="enter p2 name"><br> <!-- Input field for player 2's name -->
+      </form>
+      
+      <!-- Start / Resume button -->
+      <button id="start">Start / Resume</button>
+      <!-- Pause button -->
+      <button id="stop">Pause</button>
+      
+      <!-- Display names of highest scoring players -->
+      <p>Names of highest scoring players: <span id="namesDisplay"></span></p>
+      <!-- Display highest score -->
+      <p>Highest Score: <span id="highScore">0</span></p>
+      
+      <!-- Instructions for game controls -->
+      <p>Controls: W and A to move <b>left paddle </b>up and down <br> up arrow and down arrow to move <b>right paddle </b>up and down</p>
+      
+      <!-- Game area container -->
+      <div id="gameArea">
+          <!-- Ball element -->
+          <div id="ball"></div>
+          <!-- Left paddle element -->
+          <div id="paddleLeft"></div>
+          <!-- Right paddle element -->
+          <div id="paddleRight"></div>
+      </div>
+  </body>
+</html>
